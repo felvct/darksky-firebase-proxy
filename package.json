@@ -1,0 +1,48 @@
+{
+  "name": "darksky-firebase-proxy",
+  "version": "1.0.0",
+  "description": "A Firebase Cloud Functions Proxy for DarkSky which resolves CORS and secures your API key in the back-end as an environment variable.",
+  "main": "functions/lib/index.js",
+  "scripts": {
+    "init": "cd functions && npm i",
+    "lint": "cd functions && npx tslint --project tsconfig.json",
+    "build": "cd functions && tsc",
+    "serve": "cd functions && npm run build && firebase serve --only functions",
+    "shell": "cd functions && npm run build && firebase functions:shell",
+    "start": "cd functions && npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felvct/darksky-firebase-proxy.git"
+  },
+  "keywords": [
+    "FirebaseCloudFunctions",
+    "Firebase Cloud Functions",
+    "Firebase Cloud Functions Proxy",
+    "Proxy",
+    "DarkSky",
+    "CORS Proxy",
+    "API Proxy",
+    "proxy",
+    "darksky",
+    "cors",
+    "cors proxy",
+    "api proxy",
+    "firebase",
+    "cloud",
+    "functions",
+    "firebase cloud functions",
+    "darksky proxy",
+    "firebase proxy",
+    "firebase cors proxy",
+    "firebase api proxy"
+  ],
+  "author": "Felix Vaucourt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felvct/darksky-firebase-proxy/issues"
+  },
+  "homepage": "https://github.com/felvct/darksky-firebase-proxy#readme"
+}
